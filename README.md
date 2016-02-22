@@ -1,6 +1,6 @@
 
-Cloud Computing Codes 
-**Author: Xuan Li
+###Cloud Computing Codes 
+*Author: Xuan Li*
 
 ##File Name 	
    NGramJob.java
@@ -17,16 +17,16 @@ In Mapper function,we tokenize each word and generate n-grams. We follow the bel
      * 4. No words are separated by two lines. 
 
 ##How to build
-*1. First complie NGramJob.java *
+**1. First complie NGramJob.java **
 -       `javac -classpath ``${HADOOP_INSTALL}/bin/hadoop classpath` `NGramJob.java`
  
-*2. Create ngramjob.jar *
+**2. Create ngramjob.jar **
 - `jar cf ngramjob.jar NGramJob*.class`	
  
-*3. Run the map-reduce program *
+**3. Run the map-reduce program **
 - `hadoop jar ngramjob.jar NGramJob <INPUT file address> <OUTPUT file address>  <Number of Ngram>`
 
-* 4.  View output *
+**4. View output **
 - `hdfs dfs -cat /user/Ngram_twice_output/part*`
  
 
