@@ -1,13 +1,13 @@
 
 Cloud Computing Codes 
-Author: Xuan Li
+**Author: Xuan Li
 
-#File Name 	
+##File Name 	
    NGramJob.java
-#Options required
+##Options required
    NGramJob <Input File Address> < Output File Address> <N : 1 ,2 ,3,…….>
 
-#Introduction
+##Introduction
 This NGramJob.java is for n-gram mapreduce program that designed for hadoop platform.
 In Mapper function,we tokenize each word and generate n-grams. We follow the below assumptions:
      * 1. All the words are consecutive alphabetic English words. Other languages will not be proceed.
@@ -16,18 +16,17 @@ In Mapper function,we tokenize each word and generate n-grams. We follow the bel
      * 3. Upper case and lower case are not differentiated.
      * 4. No words are separated by two lines. 
 
-#How to build
-(1) First complie this java
-NGramJob.java
-javac -classpath `${HADOOP_INSTALL}/bin/hadoop classpath` NGramJob.java  
+##How to build
+**1. First complie NGramJob.java **
+-       `javac -classpath ``${HADOOP_INSTALL}/bin/hadoop classpath` `NGramJob.java`
  
-(2) Create Jar File for NGramJob
- jar cf ngramjob.jar NGramJob*.class	
+**2. Create ngramjob.jar **
+- `jar cf ngramjob.jar NGramJob*.class`	
  
-(3) Running the map-reduce program
-hadoop jar ngramjob.jar NGramJob <INPUT file address> <OUTPUT file address>  <Number of Ngram>
-(4) viewing output
-hdfs dfs -cat /user/Ngram_twice_output/part*
+**3. Running the map-reduce program **
+- `hadoop jar ngramjob.jar NGramJob <INPUT file address> <OUTPUT file address>  <Number of Ngram>`
+** 4 view output **
+- `hdfs dfs -cat /user/Ngram_twice_output/part*`
  
 
  
