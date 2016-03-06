@@ -1,9 +1,9 @@
 Spark - Count Listening Frequencies of Artists
 
-##PROJECT NAME##
-
+##Program##
+Count.scala
 ##AUTHOR##
-
+Xuan Li, Maria, Telda
 ##INTRODUCTION##
 
 
